@@ -843,6 +843,10 @@ def HasStdExtH : Predicate<"Subtarget->hasStdExtH()">,
 
 // Supervisor extensions
 
+def FeatureStdExtSdext : RISCVExtension<1, 0, "External Debug">;
+
+def FeatureStdExtSdtrig : RISCVExtension<1, 0, "Debug triggers">;
+
 def FeatureStdExtShgatpa
     : RISCVExtension<1, 0,
                      "SvNNx4 mode supported for all modes supported by satp, as well as Bare">;
